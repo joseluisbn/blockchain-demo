@@ -12,7 +12,7 @@ class BlockChain(Node):
         self.current_transactions = []
         self.blocks = []
         self.nodes = []
-        self.difficulty = 32  # Number of zeros required to be in the hash
+        self.difficulty = 2  # Number of zeros required to be in the hash
         if port == None:
             random.seed()
             port = random.randint(10000, 20000)
@@ -244,4 +244,3 @@ class ComplexEncoder(json.JSONEncoder):
             return obj.repr_json()
         else:
             return json.JSONEncoder.default(self, obj, sort_keys=True, indent=4)
-

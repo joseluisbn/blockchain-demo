@@ -1,6 +1,7 @@
 import unittest
 import json
-from src.cryptocurrency import BlockChain, ComplexEncoder
+from cryptocurrency import BlockChain, ComplexEncoder
+
 
 class TestBlockChain(unittest.TestCase):
     def setUp(self):
@@ -73,5 +74,7 @@ class TestBlockChain(unittest.TestCase):
                 blockchain2.repr_json(), cls=ComplexEncoder, sort_keys=True, indent=4
             )
         )
+
+
 if __name__ == "__main__":
     unittest.main()
