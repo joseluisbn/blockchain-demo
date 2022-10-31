@@ -15,3 +15,9 @@ A detailed list of package versions can be found in *requirements.txt*.
 - [p2pnetwork](https://pypi.org/project/p2pnetwork/)
 
 ## Tests
+
+You can launch a test in a terminal typing the command:
+
+```bash
+python3 test.py
+```
