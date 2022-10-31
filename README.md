@@ -21,3 +21,7 @@ You can run tests in a terminal typing the command:
 ```bash
 python3 test.py
 ```
+
+Here is an example in VS Code:
+
+![imagen](https://user-images.githubusercontent.com/42966407/199074394-998a18f2-deb9-46e8-9896-932c7960097d.png)
