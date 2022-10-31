@@ -9,7 +9,9 @@ SPOILER: This won't make you rich! Repo created for educational purposes.
 
 ## Requirements
 
-- RSA
-- pip install p2pnetwork
+A detailed list of package versions can be found in *requirements.txt*.
+
+- [RSA](https://pypi.org/project/rsa/)
+- [p2pnetwork](https://pypi.org/project/p2pnetwork/)
 
 ## Tests
