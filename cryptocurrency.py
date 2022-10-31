@@ -12,7 +12,7 @@ class BlockChain(Node):
         self.current_transactions = []
         self.blocks = []
         self.nodes = []
-        self.difficulty = 2  # Number of zeros required to be in the hash
+        self.difficulty = 4  # Number of zeros required to be in the hash
         if port == None:
             random.seed()
             port = random.randint(10000, 20000)
@@ -165,7 +165,7 @@ class Block(object):
         return proof
 
     def valid_proof(self, proof, difficulty):
-        hash = hashlib.sha256(
+        hash_funct = hashlib.sha256(
             (
                 str(self.index)
                 + str(self.timestamp)
@@ -174,7 +174,7 @@ class Block(object):
                 + str(proof)
             ).encode("utf-8")
         ).hexdigest()
-        return hash[:difficulty] == "0" * difficulty
+        return hash_funct[:difficulty] == "0" * difficulty
 
     @property
     def hash(self):
