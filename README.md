@@ -16,7 +16,7 @@ A detailed list of package versions can be found in *requirements.txt*.
 
 ## Tests
 
-You can launch a test in a terminal typing the command:
+You can run tests in a terminal typing the command:
 
 ```bash
 python3 test.py
